@@ -28,7 +28,7 @@ fontCenterCalc = ImageFont.truetype("Action of the Time.ttf", 200)
 fontRB = ImageFont.truetype("Action of the Time.ttf", 240)
 fontRBCalc = ImageFont.truetype("Action of the Time.ttf", 120)
 
-with open('hog.csv', 'rb') as f :
+with open('hog.csv', 'rt') as f :
 	reader = csv.reader(f, delimiter=',', quotechar='|')
 	for row in reader :
 		if i == 0:
